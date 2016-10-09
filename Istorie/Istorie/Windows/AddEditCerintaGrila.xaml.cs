@@ -1,4 +1,5 @@
 ﻿using System;
+using Istorie.Utils;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -26,9 +27,11 @@ namespace Istorie.Windows
         {
             InitializeComponent();
         }
-        public AddEditCerintaGrila(string _intrebare,string[] raspunsuri,bool _isMultiple)
+        public AddEditCerintaGrila(IntrebareGrila grila)
         {
-            this.intrebare.Text = _intrebare;
+            InitializeComponent();
+            intrebare.Text = grila.Intrebare;
+
 
         }
         private void add_button_Click(object sender, RoutedEventArgs e)

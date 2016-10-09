@@ -32,3 +32,4 @@ C:\Users\Bogdan.Ilie\Desktop\Istorie\Istorie\obj\Debug\Istorie.Properties.Resour
 C:\Users\Bogdan.Ilie\Desktop\Istorie\Istorie\obj\Debug\Istorie.csproj.GenerateResource.Cache
 C:\Users\Bogdan.Ilie\Desktop\Istorie\Istorie\obj\Debug\Istorie.exe
 C:\Users\Bogdan.Ilie\Desktop\Istorie\Istorie\obj\Debug\Istorie.pdb
+C:\Users\Bogdan.Ilie\Desktop\Istorie\Istorie\obj\Debug\Istorie.csprojResolveAssemblyReference.cache

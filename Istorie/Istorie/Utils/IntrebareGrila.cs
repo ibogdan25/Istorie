@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace Istorie.Utils
 {
-    class IntrebareGrila
+    public class IntrebareGrila
     {
         //CONSTRUCTORI
-        public IntrebareGrila(string intreb,string[] raspunsuri_1,string[] variante)
+        public IntrebareGrila(int _id,string intreb,string[] raspunsuri_1,string[] variante)
         {
+            id = _id;
             intrebare = intreb;
             raspunsuri = raspunsuri_1.ToList();
             foreach(string varianta in variante)
@@ -30,6 +31,14 @@ namespace Istorie.Utils
         /////////////////////////////////////////////////////////////////////////////////
 
         //PROPRIETATI
+        private int id;
+
+        public int Id
+        {
+            get { return id; }
+            set { id = value; }
+        }
+
         private string intrebare;
 
         public string Intrebare
@@ -62,9 +71,13 @@ namespace Istorie.Utils
         {
             return eCorecta;
         }
-        public bool returnVarianta(int index)
+        public bool returnECorect(int index)
         {
             return eCorecta[index];
+        }
+        public string returnVarianta(int index)
+        {
+            return raspunsuri[index];
         }
 
     }

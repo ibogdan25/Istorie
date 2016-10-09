@@ -39,12 +39,13 @@ namespace Istorie.Windows
                 OleDbDataReader dr = comanda.ExecuteReader();
                 while (dr.Read())
                 {
+                    int id =int.Parse( dr[0].ToString());
                     string intrebare = dr[1].ToString();
                     string raspunsuriT = dr[2].ToString();
                     string[] raspunsuri = raspunsuriT.Split(new string[] { "[spatiu]" }, StringSplitOptions.RemoveEmptyEntries);
                     string varianteCorecteT_1 = dr[3].ToString();
                     string[] varianteCorect_1=varianteCorecteT_1.Split(new string[] { "[spatiu]" }, StringSplitOptions.RemoveEmptyEntries);
-                    intrebariGrila.Add(new IntrebareGrila(intrebare, raspunsuri, varianteCorect_1));
+                    intrebariGrila.Add(new IntrebareGrila(id,intrebare, raspunsuri, varianteCorect_1));
                 }
             }
             catch(Exception ex)
@@ -60,16 +61,18 @@ namespace Istorie.Windows
             {
                 //intrebare
                 int contor = 0;
+                panel_Intrebari.Children.Clear();
                 foreach(var grila in intrebariGrila)
                 {
                     //INTREBARE
-                    TextBox intrebareTextBox = new TextBox();
+                    Label intrebareTextBox = new Label();
                     intrebareTextBox.Name = "intrebareTextBox_" + contor;
-                    intrebareTextBox.IsEnabled = false;
+                    intrebareTextBox.IsEnabled = true;
                     intrebareTextBox.BorderThickness = new Thickness(0);
-                    intrebareTextBox.Text = grila.Intrebare;
-                    intrebareTextBox.TextWrapping = TextWrapping.Wrap;
+                    intrebareTextBox.Content = grila.Intrebare;
                     intrebareTextBox.Margin = new Thickness(0, 10, 0, 3);
+                    intrebareTextBox.Tag = grila;
+                    intrebareTextBox.MouseDoubleClick += new MouseButtonEventHandler(intrebare_DoubleClick);
                     panel_Intrebari.Children.Add(intrebareTextBox);
 
                     //RASPUNSURI
@@ -82,7 +85,7 @@ namespace Istorie.Windows
                         raspunsuTextBox.BorderThickness = new Thickness(0);
                         raspunsuTextBox.Text = raspuns;
                         raspunsuTextBox.Foreground= (SolidColorBrush)(new BrushConverter().ConvertFrom("#000000"));
-                        if (grila.returnVarianta(contorRaspunsuri) == true)
+                        if (grila.returnECorect(contorRaspunsuri) == true)
                         {
                             raspunsuTextBox.Background = (SolidColorBrush)(new BrushConverter().ConvertFrom("#d2ffc8"));
                         }
@@ -99,6 +102,16 @@ namespace Istorie.Windows
                     contor++;
                 }
             }
+        }
+        public void intrebare_DoubleClick(object sender,MouseEventArgs e)
+        {
+            Label actual = (Label)sender;
+            IntrebareGrila grila = (IntrebareGrila)actual.Tag;
+            Hide();
+            AddEditCerintaGrila form=new AddEditCerintaGrila(grila);
+            form.ShowDialog();
+            fill();
+            ShowDialog();
         }
     }
 }
