@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="IstorieModelStoreContainer" CdmEntityContainer="IstorieEntities">
+    <EntitySetMapping Name="Intrebaris">
+      <EntityTypeMapping TypeName="IstorieModel.Intrebari">
+        <MappingFragment StoreEntitySet="Intrebari">
+          <ScalarProperty Name="intrebareId" ColumnName="intrebareId" />
+          <ScalarProperty Name="text" ColumnName="text" />
+          <ScalarProperty Name="raspunsuri" ColumnName="raspunsuri" />
+          <ScalarProperty Name="varianteCorecte" ColumnName="varianteCorecte" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="IstorieModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="userId" ColumnName="userId" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="fullName" ColumnName="fullName" />
+          <ScalarProperty Name="pass" ColumnName="pass" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="birthday" ColumnName="birthday" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

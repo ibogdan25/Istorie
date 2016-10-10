@@ -1,0 +1,66 @@
+﻿<Window x:Class="Istorie.Windows.AddEditCerintaGrila"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Istorie.Windows"
+        mc:Ignorable="d"
+        Title="Întrebare grilă" Height="447.999" Width="524.581" IsEnabled="True" ShowInTaskbar="True" Icon="/Istorie;component/Images/Icondesigner.net-Hyperion-Sidebar-Library.ico">
+    <Grid>
+        <StackPanel>
+            <StackPanel>
+                    <Grid>
+                        <StackPanel Background="#FFF5FEFF">
+                            <Label Margin="30,0,0,0">Intrebarea :</Label>
+                        <TextBox x:Name="intrebare" Background="White" Width="450" Height="90" HorizontalAlignment="Left" Margin="30,0,0,20" FontSize="20" TextWrapping="Wrap"/>
+
+                    </StackPanel>
+                    </Grid>
+                    <Label Margin="30,0,0,0">Raspunsuri</Label>
+                
+                    <StackPanel Orientation="Horizontal">
+                        <Button x:Name="add_button" Margin="30,0,0,0" Width="130" Click="add_button_Click">Adauga intrebare</Button>
+                        <Button x:Name="detele_button" Margin="20,0,0,0" Width="130" Click="detele_button_Click">Sterge ultima intrebare</Button>
+                        </StackPanel>
+            </StackPanel>
+            <ScrollViewer Height="193" >
+                <StackPanel x:Name="stack_raspunsuri">
+                    <Grid x:Name="grid_intrebarea_1" Margin="0,10,0,1">
+                        <Label x:Name="label_intrebarea_1" Margin="0,0,20,0">#1</Label>
+                        <TextBox x:Name="intrebarea_1" Width="280" HorizontalAlignment="Left" Margin="30,0,0,0"></TextBox>
+                        <CheckBox x:Name="checkBox_1" Margin="330,0,0,0" VerticalAlignment="Center"  >Raspuns corect</CheckBox>
+                    </Grid>
+                    <Grid x:Name="grid_intrebarea_2" Margin="0,10,0,1">
+                        <Label x:Name="label_intrebarea_2" Margin="0,0,20,0">#2</Label>
+                        <TextBox x:Name="intrebarea_2" Width="280" HorizontalAlignment="Left" Margin="30,0,0,0"></TextBox>
+                        <CheckBox x:Name="checkBox_2" Margin="330,0,0,0" VerticalAlignment="Center"  >Raspuns corect</CheckBox>
+                    </Grid>
+                    <Grid x:Name="grid_intrebarea_3" Margin="0,10,0,1">
+                        <Label x:Name="label_intrebarea_3" Margin="0,0,20,0">#3</Label>
+                        <TextBox x:Name="intrebarea_3" Width="280" HorizontalAlignment="Left" Margin="30,0,0,0"></TextBox>
+                        <CheckBox x:Name="checkBox_3" Margin="330,0,0,0" VerticalAlignment="Center" >Raspuns corect</CheckBox>
+                    </Grid>
+                    <Grid x:Name="grid_intrebarea_4" Margin="0,10,0,1">
+                        <Label x:Name="label_intrebarea_4" Margin="0,0,20,0">#4</Label>
+                        <TextBox x:Name="intrebarea_4" Width="280" HorizontalAlignment="Left" Margin="30,0,0,0"></TextBox>
+                        <CheckBox x:Name="checkBox_4" Margin="330,0,0,0" VerticalAlignment="Center"  >Raspuns corect</CheckBox>
+                    </Grid>
+                </StackPanel>
+            </ScrollViewer>
+            <StackPanel Orientation="Horizontal" Margin="0,5,0,5">
+                <Button HorizontalAlignment="Right" Margin="30,0,0,0" Height="27" Width="90">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="/Istorie;component/Images/cancel-icon.ico" HorizontalAlignment="Left" Margin="0,0,7,0"></Image>
+                        <TextBlock VerticalAlignment="Center">Renunta</TextBlock>
+                    </StackPanel>
+                </Button>
+                <Button HorizontalAlignment="Right" Margin="265,0,0,0" Height="27" Width="90" x:Name="save" Click="save_Click">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="/Istorie;component/Images/ok-icon.ico"  HorizontalAlignment="Left" Margin="0,0,7,0"></Image>
+                        <TextBlock VerticalAlignment="Center">Salveaza</TextBlock>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

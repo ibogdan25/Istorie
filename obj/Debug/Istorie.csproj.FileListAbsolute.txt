@@ -1,0 +1,45 @@
+C:\Users\Bogdan\Documents\Visual Studio 2015\Projects\Istorie\Istorie\obj\Debug\MainWindow.g.cs
+C:\Users\Bogdan\Documents\Visual Studio 2015\Projects\Istorie\Istorie\obj\Debug\Windows\AddEditCerintaGrila.g.cs
+C:\Users\Bogdan\Documents\Visual Studio 2015\Projects\Istorie\Istorie\obj\Debug\App.g.cs
+C:\Users\Bogdan\Documents\Visual Studio 2015\Projects\Istorie\Istorie\obj\Debug\Istorie_MarkupCompile.cache
+C:\Users\Bogdan\Documents\Visual Studio 2015\Projects\Istorie\Istorie\obj\Debug\Istorie_MarkupCompile.lref
+C:\Users\Bogdan\Documents\Visual Studio 2015\Projects\Istorie\Istorie\bin\Debug\Istorie.exe.config
+C:\Users\Bogdan\Documents\Visual Studio 2015\Projects\Istorie\Istorie\bin\Debug\Istorie.exe
+C:\Users\Bogdan\Documents\Visual Studio 2015\Projects\Istorie\Istorie\bin\Debug\Istorie.pdb
+C:\Users\Bogdan\Documents\Visual Studio 2015\Projects\Istorie\Istorie\obj\Debug\MainWindow.baml
+C:\Users\Bogdan\Documents\Visual Studio 2015\Projects\Istorie\Istorie\obj\Debug\Windows\AddEditCerintaGrila.baml
+C:\Users\Bogdan\Documents\Visual Studio 2015\Projects\Istorie\Istorie\obj\Debug\Istorie.g.resources
+C:\Users\Bogdan\Documents\Visual Studio 2015\Projects\Istorie\Istorie\obj\Debug\Istorie.Properties.Resources.resources
+C:\Users\Bogdan\Documents\Visual Studio 2015\Projects\Istorie\Istorie\obj\Debug\Istorie.csproj.GenerateResource.Cache
+C:\Users\Bogdan\Documents\Visual Studio 2015\Projects\Istorie\Istorie\obj\Debug\Istorie.exe
+C:\Users\Bogdan\Documents\Visual Studio 2015\Projects\Istorie\Istorie\obj\Debug\Istorie.pdb
+C:\Users\Bogdan.Ilie\Desktop\Istorie\Istorie\bin\Debug\Istorie.exe.config
+C:\Users\Bogdan.Ilie\Desktop\Istorie\Istorie\bin\Debug\Istorie.exe
+C:\Users\Bogdan.Ilie\Desktop\Istorie\Istorie\bin\Debug\Istorie.pdb
+C:\Users\Bogdan.Ilie\Desktop\Istorie\Istorie\obj\Debug\MainWindow.g.cs
+C:\Users\Bogdan.Ilie\Desktop\Istorie\Istorie\obj\Debug\Windows\AddEditCerintaGrila.g.cs
+C:\Users\Bogdan.Ilie\Desktop\Istorie\Istorie\obj\Debug\Windows\ListaIntrebari.g.cs
+C:\Users\Bogdan.Ilie\Desktop\Istorie\Istorie\obj\Debug\Windows\MeniuPrincipal.g.cs
+C:\Users\Bogdan.Ilie\Desktop\Istorie\Istorie\obj\Debug\App.g.cs
+C:\Users\Bogdan.Ilie\Desktop\Istorie\Istorie\obj\Debug\Istorie_MarkupCompile.cache
+C:\Users\Bogdan.Ilie\Desktop\Istorie\Istorie\obj\Debug\Istorie_MarkupCompile.lref
+C:\Users\Bogdan.Ilie\Desktop\Istorie\Istorie\obj\Debug\MainWindow.baml
+C:\Users\Bogdan.Ilie\Desktop\Istorie\Istorie\obj\Debug\Windows\AddEditCerintaGrila.baml
+C:\Users\Bogdan.Ilie\Desktop\Istorie\Istorie\obj\Debug\Windows\ListaIntrebari.baml
+C:\Users\Bogdan.Ilie\Desktop\Istorie\Istorie\obj\Debug\Windows\MeniuPrincipal.baml
+C:\Users\Bogdan.Ilie\Desktop\Istorie\Istorie\obj\Debug\Istorie.g.resources
+C:\Users\Bogdan.Ilie\Desktop\Istorie\Istorie\obj\Debug\Istorie.Properties.Resources.resources
+C:\Users\Bogdan.Ilie\Desktop\Istorie\Istorie\obj\Debug\Istorie.csproj.GenerateResource.Cache
+C:\Users\Bogdan.Ilie\Desktop\Istorie\Istorie\obj\Debug\Istorie.exe
+C:\Users\Bogdan.Ilie\Desktop\Istorie\Istorie\obj\Debug\Istorie.pdb
+C:\Users\Bogdan.Ilie\Desktop\Istorie\Istorie\obj\Debug\Istorie.csprojResolveAssemblyReference.cache
+C:\Users\Bogdan\Documents\Visual Studio 2015\Projects\Istorie\Istorie\bin\Debug\EntityFramework.dll
+C:\Users\Bogdan\Documents\Visual Studio 2015\Projects\Istorie\Istorie\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Bogdan\Documents\Visual Studio 2015\Projects\Istorie\Istorie\bin\Debug\EntityFramework.xml
+C:\Users\Bogdan\Documents\Visual Studio 2015\Projects\Istorie\Istorie\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Bogdan\Documents\Visual Studio 2015\Projects\Istorie\Istorie\obj\Debug\Istorie.csprojResolveAssemblyReference.cache
+C:\Users\Bogdan\Documents\Visual Studio 2015\Projects\Istorie\Istorie\obj\Debug\Windows\ListaIntrebari.g.cs
+C:\Users\Bogdan\Documents\Visual Studio 2015\Projects\Istorie\Istorie\obj\Debug\Windows\MeniuPrincipal.g.cs
+C:\Users\Bogdan\Documents\Visual Studio 2015\Projects\Istorie\Istorie\obj\Debug\Istorie_Content.g.cs
+C:\Users\Bogdan\Documents\Visual Studio 2015\Projects\Istorie\Istorie\obj\Debug\Windows\ListaIntrebari.baml
+C:\Users\Bogdan\Documents\Visual Studio 2015\Projects\Istorie\Istorie\obj\Debug\Windows\MeniuPrincipal.baml

@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="IstorieModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'Istorie.dbo.Intrebari' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="Intrebari">
+          <Key>
+            <PropertyRef Name="intrebareId" />
+            <PropertyRef Name="text" />
+            <PropertyRef Name="raspunsuri" />
+            <PropertyRef Name="varianteCorecte" />
+          </Key>
+          <Property Name="intrebareId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="text" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="raspunsuri" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="varianteCorecte" Type="nvarchar(max)" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'Istorie.dbo.User' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="userId" />
+            <PropertyRef Name="name" />
+            <PropertyRef Name="fullName" />
+            <PropertyRef Name="pass" />
+            <PropertyRef Name="email" />
+          </Key>
+          <Property Name="userId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="name" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="fullName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="pass" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="email" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="birthday" Type="datetime" />
+        </EntityType>
+        <EntityContainer Name="IstorieModelStoreContainer">
+          <EntitySet Name="Intrebari" EntityType="Self.Intrebari" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Intrebari].[intrebareId] AS [intrebareId], 
+    [Intrebari].[text] AS [text], 
+    [Intrebari].[raspunsuri] AS [raspunsuri], 
+    [Intrebari].[varianteCorecte] AS [varianteCorecte]
+    FROM [dbo].[Intrebari] AS [Intrebari]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="User" EntityType="Self.User" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [User].[userId] AS [userId], 
+    [User].[name] AS [name], 
+    [User].[fullName] AS [fullName], 
+    [User].[pass] AS [pass], 
+    [User].[email] AS [email], 
+    [User].[birthday] AS [birthday]
+    FROM [dbo].[User] AS [User]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="IstorieModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Intrebari">
+          <Key>
+            <PropertyRef Name="intrebareId" />
+            <PropertyRef Name="text" />
+            <PropertyRef Name="raspunsuri" />
+            <PropertyRef Name="varianteCorecte" />
+          </Key>
+          <Property Name="intrebareId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="text" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="raspunsuri" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="varianteCorecte" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="userId" />
+            <PropertyRef Name="name" />
+            <PropertyRef Name="fullName" />
+            <PropertyRef Name="pass" />
+            <PropertyRef Name="email" />
+          </Key>
+          <Property Name="userId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="fullName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="pass" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="birthday" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityContainer Name="IstorieEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Intrebaris" EntityType="Self.Intrebari" />
+          <EntitySet Name="Users" EntityType="Self.User" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="IstorieModelStoreContainer" CdmEntityContainer="IstorieEntities">
+          <EntitySetMapping Name="Intrebaris">
+            <EntityTypeMapping TypeName="IstorieModel.Intrebari">
+              <MappingFragment StoreEntitySet="Intrebari">
+                <ScalarProperty Name="intrebareId" ColumnName="intrebareId" />
+                <ScalarProperty Name="text" ColumnName="text" />
+                <ScalarProperty Name="raspunsuri" ColumnName="raspunsuri" />
+                <ScalarProperty Name="varianteCorecte" ColumnName="varianteCorecte" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Users">
+            <EntityTypeMapping TypeName="IstorieModel.User">
+              <MappingFragment StoreEntitySet="User">
+                <ScalarProperty Name="userId" ColumnName="userId" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="fullName" ColumnName="fullName" />
+                <ScalarProperty Name="pass" ColumnName="pass" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="birthday" ColumnName="birthday" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
